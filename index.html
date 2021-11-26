@@ -29,12 +29,13 @@
                 <span></span>
             </div>
             <div class="w-8/12 lg:w-1/2 mx-auto">
-				<img src="./images/logo.svg" class="inline-block">
+				<img src="./images/logo.svg" class="hidden md:inline-block">
+				<img src="./images/logo-bottom.png" class="inline-block md:hidden">
 			</div>
 		</div>
 	</div>
-	<div class="nav w-full border-b border-fuchsia-600 filter drop-shadow-sm">
-		<div class="container mx-auto">
+	<div class="nav w-full lg:border-b border-fuchsia-600 filter drop-shadow-sm">
+		<div class="lg:container mx-auto">
 			<div class="w-full">
 				<nav role="navigation" id="menu"> 
 					<div class="toggleArrow" id="menuToggle2"><img src="./images/toggleArrow.png"></div>
@@ -52,7 +53,7 @@
 		</div>
 	</div>
 	<div class="container mx-auto px-4">
-		<div class="w-full py-4">
+		<div class="w-full mt-6 hidden md:block">
 			<ul class="list-none flex">
 				<li><a href="" class="text-sm primary-text font-secondary">NEWS </a>
 					<span class="text-sm primary-text font-secondary px-3" >:</span>
@@ -63,15 +64,26 @@
 				<li><span class="text-sm primary-text font-secondary">REQUEST FOR AUS. GOVERNMENT ACTION</span></li>
 			</ul>
 		</div>
-		<div class="">
-			<h2 class="text-4xl primary-text mb-4">COVID19 Ravages Our Aged Care Community Members</h2>
-				<div class="my-5 text-sm primary-text font-secondary">by the Board of Directors of the GCM | Aug 20, 2020 </div>
+
+		<div class="w-full block md:hidden">
+			<img src="./images/banner-sm.png" class="w-full" /> 
 		</div>
+		
+		<div class="my-5 text-sm primary-text font-secondary block md:hidden text-center mt-5">Aug 20, 2020 </div>
+
+		<div class="lg:w-8/12">
+			<h2 class="text-4xl primary-text my-8 text-center md:text-left">COVID19 Ravages Our Aged Care Community Members</h2>
+			<div class="my-5 text-sm primary-text font-secondary hidden md:block">by the Board of Directors of the GCM | Aug 20, 2020 </div>
+		</div>
+
 		<div class="flex gap-10">
 			<div class="w-full lg:w-9/12">
 				
-				<img src="./images/banner.png" width="100%">
-				<div class="flex justify-between mt-2">
+				<div class="w-full hidden md:block">
+					<img src="./images/banner.png" width="100%">
+				</div>
+
+				<div class="justify-between mt-2 hidden md:flex">
 					<div class="text-xs primary-text">Touching hands has become a memory in the caring of elderly patients during the pandemic.</div>
 					<div class="text-xs text-gray-400">Image Credit: Some Company</div>
 				</div>
@@ -89,7 +101,7 @@
 					<a href=""><img src="./images/email.svg"></a>
 				</div>
 
-				<div class="mt-16 w-6/12">
+				<div class="mt-16 md:w-6/12">
 					<h3 class="primary-text text-2xl">Recent Announcements</h3>
 					<ul class="list-none mt-5 pl-5">
 						<li class="py-4"><a href="" class="primary-text text-md ">Condolence Message</a></li>
@@ -98,7 +110,7 @@
 					</ul>
 				</div>
 
-				<div class="mt-8 w-6/12">
+				<div class="mt-8 md:w-6/12">
 					<h3 class="primary-text text-2xl">Events Coming Up</h3>
 					<ul class="list-none mt-5 pl-5">
 						<li class="py-4"><a href="" class="primary-text text-md ">17 Sep: Elia Kazan And The DiasporicIdentity Of A Greek American Film Maker</a></li>
@@ -134,11 +146,16 @@
 
 	<div class="footer primary-bg mt-16 pt-12 pb-16">
 		<div class="container mx-auto px-4">
-			<div class=""></div>
-			<div class="grid grid-cols-7 gap-10">
+			<div class="w-full py-8">
+				<a href="">
+					<img src="./images/logo-bottom.png" class="hidden md:inline-block">
+					<img src="./images/logo.svg" class="inline-block md:hidden">
+				</a>
+			</div>
+			<div class="md:grid md:grid-cols-7 gap-10">
 				<div class="">
-					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b border-blue-700 h-24">EVENTS</h3>
-					<ul class="list-none">
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">EVENTS</h3>
+					<ul class="list-none hidden md:block">
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">COMING UP</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">LET'S PLAN</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OTHER EVENTS</a></li>
@@ -151,8 +168,8 @@
 				</div>
 
 				<div class="">
-					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b border-blue-700 h-24">NEWS</h3>
-					<ul class="list-none">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">NEWS</h3>
+					<ul class="list-none hidden md:block">
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ALL NEWS</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCEMEN</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">MAJOR NEWS</a></li>
@@ -160,8 +177,8 @@
 				</div>
 
 				<div class="">
-					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b border-blue-700 h-24">LANGUAGE SCHOOLS</h3>
-					<ul class="list-none">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">LANGUAGE SCHOOLS</h3>
+					<ul class="list-none hidden md:block">
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR CHILDREN</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR ADULTS</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ENROL</a></li>
@@ -172,8 +189,8 @@
 				</div>
 
 				<div class="">
-					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b border-blue-700 h-24">GREEK CENTRE</h3>
-					<ul class="list-none">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">GREEK CENTRE</h3>
+					<ul class="list-none hidden md:block">
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ABOUT</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DIRECTORY</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">VENUE BOOKING</a></li>
@@ -181,8 +198,8 @@
 				</div>
 
 				<div>
-					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b border-blue-700 h-24">CHURCHES</h3>
-					<ul class="list-none">
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">CHURCHES</h3>
+					<ul class="list-none hidden md:block">
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HISTORY</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCIATIONOF OUR LADY</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HOLY TRINITY</a></li>
@@ -193,8 +210,8 @@
 				</div>
 
 				<div >
-					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b border-blue-700 h-24">SUPPORT & MEMBERS</h3>
-					<ul>
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center hidden md:block">SUPPORT & MEMBERS</h3>
+					<ul class="list-none hidden md:block">
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
@@ -202,8 +219,8 @@
 				</div>
 
 				<div >
-					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b border-blue-700 h-24">ABOUT</h3>
-					<ul>
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">ABOUT</h3>
+					<ul class="list-none hidden md:block">
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A MEMBER</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
 						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
@@ -212,8 +229,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container mx-auto px-8">
-		<div class="w-6 mx-auto flex justify-center mt-10">
+	<div class="container px-4 mx-auto md:px-8">
+		<div class="mx-auto flex justify-center mt-10">
 			<div class="text-center px-4">
 				<a href="" class="bolck">
 					<img src="./images/fb.svg" class="inline-block">
@@ -243,12 +260,12 @@
 			</div>
 		</div>
 
-		<div class="w-5/12 mx-auto mt-16">
-			<ul class="flex justify-between list-disc primary-text">
-				<li class="font-secondary text-md primary-text pl-1">Home</li>
-				<li class="font-secondary text-md primary-text pl-1">Contact</li>
-				<li class="font-secondary text-md primary-text pl-1">Map</li>
-				<li class="font-secondary text-md primary-text pl-1">Terms, Refunds and Privacy</li>
+		<div class="lg:w-5/12 mx-auto mt-16">
+			<ul class="flex justify-between md:list-disc primary-text">
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Home</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Contact</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Map</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Terms, Refunds and Privacy</li>
 			</ul>
 		</div>
 

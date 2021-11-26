@@ -25,6 +25,11 @@ body{
 .ToggleIcon,#menuToggle2{
 	display: none;
 }
+.footer h3{
+	border-color: #3862ac;
+}
+
+
 @media (max-width: 1024px){
 .ToggleIcon,#menuToggle2{
 	display: block;
@@ -80,7 +85,7 @@ nav {
 }
 .show{
   transform: none !important;
-  margin-left:-10px !important;
+  margin-left:0px !important;
 }
 #menu li{
 	text-align: left;
