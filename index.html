@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./tailwind.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
   <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="wrapper">
-	<div class="header bg-blue-800 w-full text-center p-1">
+	<div class="header primary-bg w-full text-center p-1">
 		<div class="container mx-auto px-4">
 			<img src="./images/logo.png" class="inline-block">
 		</div>
@@ -19,7 +20,7 @@
 			<div class="w-full">
 				<ul class="w-full list-none grid grid-cols-7 gap-2 text-center">
 					<li class="py-4"><a href="">Events</a></li>
-					<li class="py-4 bg-blue-100"><a href="" class="font-bold text-blue-800">News</a></li>
+					<li class="py-4 bg-blue-100"><a href="" class="font-bold primary-text">News</a></li>
 					<li class="py-4"><a href="">Language School</a></li>
 					<li class="py-4"><a href="">Greek Center</a></li>
 					<li class="py-4"><a href="">Churches</a></li>
@@ -32,26 +33,54 @@
 	<div class="container mx-auto px-16">
 		<div class="w-full py-4">
 			<ul class="list-none flex">
-				<li><a href="" class="font-bold text-blue-800 pr-4">News :</a></li>
-				<li><a href="" class="font-bold text-blue-800 pr-4">News2 :</a></li>
-				<li class="font-bold text-blue-800">test</li>
+				<li><a href="" class="text-sm primary-text font-secondary">NEWS </a>
+					<span class="text-sm primary-text font-secondary px-3" >:</span>
+				</li>
+				<li><a href="" class="text-sm primary-text font-secondary">ANNOUNCEMENT</a>
+					<span class="text-sm primary-text font-secondary px-3" >:</span>
+				</li>
+				<li><span class="text-sm primary-text font-secondary">REQUEST FOR AUS. GOVERNMENT ACTION</span></li>
 			</ul>
 		</div>
-		<div class="flex gap-4">
+		<div class="">
+			<h2 class="text-4xl primary-text mb-4">COVID19 Ravages Our Aged Care Community Members</h2>
+				<div class="my-5 text-sm primary-text font-secondary">by the Board of Directors of the GCM | Aug 20, 2020 </div>
+		</div>
+		<div class="flex gap-10">
 			<div class="w-9/12">
-				<h2 class="text-4xl font-bold text-blue-800 mb-4">COVID19 Ravages Our Aged Care Community Members</h2>
-				<div class="text-md text-blue-800 font-bold mb-4">by the Board of Directors of the GCM | Aug 20, 2020 </div>
+				
 				<img src="./images/banner.png" width="100%">
+				<div class="flex justify-between mt-2">
+					<div class="text-xs primary-text">Touching hands has become a memory in the caring of elderly patients during the pandemic.</div>
+					<div class="text-xs text-gray-400">Image Credit: Some Company</div>
+				</div>
+
+				<p class="primary-text text-md py-4 font-light leading-8">The Greek-Australian community has been heavily impacted by COVID-19. In particular, there is a high proportion of elderly Greek-Australians, especially in aged care, that have passed away due to COVID-19 or are currently in hospital fighting for their life as a result of this pandemic.</p>
+				<p class="primary-text text-md py-4 font-light leading-8">The GCM is extremely saddened by this and is calling on the industry’s governing authorities to leave no stone unturned in investigating what went wrong and what needs to be urgently fixed to provide the care some of our most vulnerable community members deserve.</p>
+				<p class="primary-text text-md py-4 font-light leading-8">We note that the Royal Commission in Aged Care has closed submissions at the end of July and are concerned that the matters specific to the management of this pandemic in Victorian facilities are not fully embraced within its investigations and considerations.</p>
+				<p class="primary-text text-md py-4 font-light leading-8">We call on the Federal Government, Victorian Government and other stakeholders to conduct whatever assessments are needed and determine what needs to be put in place moving forward so as to never see a tragedy like the one we are living through ever take place again.</p>
+
+
+				<div class="flex gap-12 mt-16">
+					<span class="primary-text text-md py-1 font-light">SHARE</span>
+					<a href=""><img src="./images/fb.svg"></a>
+					<a href=""><img src="./images/Twitter-Logo.wine.svg"></a>
+					<a href=""><img src="./images/email.svg"></a>
+				</div>
 			</div>
 			<div class="w-3/12">
 				 
-				<div class="border border-blue-800 p-4">
-					<div class="">
-						<img src="./images/">
+				<div class="border border-blue-800 p-4 relative pt-8 mt-5">
+					<div class="absolute mx-auto w-16 px-2 h-14 inset-x-0 bg-white suc-icon">
+						<img src="./images/Path_237.svg">
+					</div>
+					<div class=" py-3 text-sm primary-text text-center">
+						Get the latest newsin<br/>your inbox
 					</div>
 					<div class="w-full">
+						<label class="text-xs text-gray-800 font-secondary" >Email (required)</label>
 						<input type="text" name="" class="w-full border border-gray-400 p-3 h-10" placeholder="test">
-						<input type="submit" name="" class="h-10 bg-blue-800 text-white text-center font-bold w-full mt-3" value="SUBSCRIBE">
+						<input type="submit" name="" class="h-10 primary-bg text-white text-center font-bold w-full mt-3" value="SUBSCRIBE">
 					</div>
 				</div> 
 				</div>

@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="29" height="29">
+	<title>Single News - Large Desktop</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #1f4fa1 } 
+		.shp1 { fill: #ffffff } 
+		.shp2 { fill: none;stroke: #1f4fa1;stroke-width: 2 } 
+	</style>
+	<g id="Single News - Large Desktop">
+		<g id="Group 148">
+			<path id="Ellipse 1" class="shp0" d="M14.5 29C6.48 29 0 22.52 0 14.5C0 6.48 6.48 0 14.5 0C22.52 0 29 6.48 29 14.5C29 22.52 22.52 29 14.5 29Z" />
+			<path id="Rectangle 397" class="shp1" d="M6 8L23 8L23 20L6 20L6 8Z" />
+			<path id="Path 231" class="shp2" d="M23 7.81L14.87 15.75L6 7.81" />
+		</g>
+	</g>
+</svg>
