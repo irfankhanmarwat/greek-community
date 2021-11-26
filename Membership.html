@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./tailwind.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	  $("#menuToggle").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	  $("#menuToggle2").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	});
+   </script>
+</head>
+<body>
+  <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="wrapper">
+	<div class="header primary-bg w-full text-center p-4 relative">
+		<div class="container mx-auto">
+			<div id="menuToggle" class=" absolute">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="w-8/12 lg:w-1/2 mx-auto">
+				<img src="./images/logo.svg" class="hidden md:inline-block">
+				<img src="./images/logo-bottom.png" class="inline-block md:hidden">
+			</div>
+		</div>
+	</div>
+	<div class="nav w-full lg:border-b border-fuchsia-600 filter drop-shadow-sm">
+		<div class="lg:container mx-auto">
+			<div class="w-full">
+				<nav role="navigation" id="menu"> 
+					<div class="toggleArrow" id="menuToggle2"><img src="./images/toggleArrow.png"></div>
+					<ul  class="w-full list-none lg:grid lg:grid-cols-7 gap-2 text-center">
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">Events</a></li>
+						<li class="py-2 lg:bg-blue-100"><a href="" class="lg:font-medium primary-text font-secondary">News</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">Language School</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">Greek Center</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">Churches</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">Supports & Membership</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container mx-auto px-4">
+		<div class="w-full">
+			<img src="./images/Mask Group 50.png" class="w-full hidden lg:block">
+			<img src="./images/Mask Group 48.png" class="w-full hidden md:block lg:hidden">
+			<img src="./images/gcm_we_do.png" class="w-full block md:hidden">
+		</div>
+
+		<div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto py-10 md:px-8 lg:px-14 bg-white relative mt-10 md:-mt-24"> 
+			<h2 class="text-3xl font-medium primary-text mb-8 text-center md:text-left">Join the Greek Community of Melbourne today</h2>
+		 	<p class="primary-text text-md py-4 font-light leading-8">The Greek Orthodox Community of Melbourne & Victoria (GOCMV) is the largest, member based, Greek organisation in Australia.</p>
+		 	<p class="primary-text text-md py-4 font-light leading-8">By becoming a member to the Greek Community you are contributing greatly in the continuation of an organisation that belongs to and exists for its members.</p>
+
+		 	<div class="text-center md:flex items-center justify-center mt-10">
+		 		<a href="" class="block rounded-lg primary-bg text-white py-5 md:px-8 lg:px-10 xl:px-12 text-center">New Membership Application</a>
+		 		<div class="hidden md:block text-2xl text-gray-400 font-blod px-8">- OR -</div>
+		 		<a href="" class="mt-10 md:mt-0 block rounded-lg primary-bg text-white py-5 md:px-8 lg:px-10 xl:px-12 text-center">Renew your Membership</a>		 		
+		 	</div>
+		</div>
+		
+	</div>
+
+	<div class="footer primary-bg mt-16 pt-12 pb-16">
+		<div class="container mx-auto px-4">
+			<div class="w-full py-8">
+				<a href="">
+					<img src="./images/logo-bottom.png" class="hidden md:inline-block">
+					<img src="./images/logo.svg" class="inline-block md:hidden">
+				</a>
+			</div>
+			<div class="md:grid md:grid-cols-7 gap-10">
+				<div class="">
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">EVENTS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">COMING UP</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">LET'S PLAN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OTHER EVENTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">PAST EVENTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">GREEK</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">LIVE AT THE GREEK</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANTIPODES</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">GREEK HISTORY AND CULTURE</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">NEWS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ALL NEWS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCEMEN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">MAJOR NEWS</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">LANGUAGE SCHOOLS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR CHILDREN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR ADULTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ENROL</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SCHOOL BLOG</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OUR STAFF</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OUR HISTORY</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">GREEK CENTRE</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ABOUT</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DIRECTORY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">VENUE BOOKING</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">CHURCHES</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HISTORY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCIATIONOF OUR LADY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HOLY TRINITY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT DEMETRIOS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT GEORGE</a></li>
+					</ul>
+				</div>
+
+				<div >
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center hidden md:block">SUPPORT & MEMBERS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
+					</ul>
+				</div>
+
+				<div >
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">ABOUT</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A MEMBER</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container px-4 mx-auto md:px-8">
+		<div class="mx-auto flex justify-center mt-10">
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/fb.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">Facebook</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/youtube.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">YouTube</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/Twitter.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">Twitter</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/insta.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">Instagram</p>
+				</a>
+			</div>
+		</div>
+
+		<div class="lg:w-5/12 mx-auto mt-16">
+			<ul class="flex justify-between md:list-disc primary-text">
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Home</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Contact</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Map</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Terms, Refunds and Privacy</li>
+			</ul>
+		</div>
+
+		<div class="mt-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">The Greek Community of Melbourne respectfully acknowledges the Traditional Owners of the land, the Boon Wurrung and Woiwurrung (Wurundjeri) peoples of the Kulin Nation and pays respect to their Elders, past and present</p>
+		</div>
+
+		<div class="mt-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">L3, 168 Lonsdale Street, Melbourne, VIC 3000, Australia | +61 3 9662 2722  |  info@greekcommunity.com.au | A.B.N. 14 004 258 360</p>
+		</div>
+
+		<div class="my-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">Copyright © 2022 Greek Community of Melbourne</p>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
