@@ -22,16 +22,73 @@ body{
 	background: #FFF;
 	top: -30px;
 }
-.ToggleIcon,#menuToggle2{
+#menuToggle,#menuToggle2{
 	display: none;
 }
-.footer h3{
-	border-color: #3862ac;
+ 
+.bg-gc-yellow{
+	background: #f9eccc;
 }
-
-
+.text-gc-blue{
+	color: #02315a;
+}
+.bg-gc-blue{
+	background: #02315a;
+}
+.text-gc-red{
+	color: #6a0311;
+}
+.bg-gc-red{
+	background: #6a0311;
+}
+.bg-gc-red2{
+	background:#4e000b;
+}
+.bg-gc-red{
+	background: #6a0311;
+}
+.gc-bg-white80{
+	background: rgb(255 255 255 / 80%);
+}
+.gc-bg-purpel80{
+	background: rgb(148 109 171 / 80%);
+}
+.gc-bg-gray80{
+	background: rgb(153 151 151 / 80%);
+}
+/*.gc-bg-purpel80:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgb(148 109 171 / 80%);
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+	-webkit-transform: scale(1.2, 1.2);
+	-moz-transform: scale(1.2, 1.2);
+	-o-transform: scale(1.2, 1.2);
+	-ms-transform: scale(1.2, 1.2);
+	transform: scale(1.2, 1.2);
+}*/
+.lSAction > a{
+	width: 110px;
+	height: 110px;
+}
+.lSAction > .lSPrev{
+	background: url(../images/arrowLeft.svg) no-repeat center center;
+	transform: rotate(180deg);
+}
+.lSAction > .lSNext{
+	background: url(../images/arrowLeft.svg) no-repeat center center;
+}
+ul.lSPager.lSpg {
+    display: none;
+}
 @media (max-width: 1024px){
-.ToggleIcon,#menuToggle2{
+#menuToggle,#menuToggle2{
 	display: block;
 }
 nav {
@@ -98,5 +155,8 @@ nav {
     position: absolute;
     right: -45px;
     top: 50px;
+}
+.lSAction > a{
+	display: none;
 }
 }

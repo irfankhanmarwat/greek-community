@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./tailwind.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	  $("#menuToggle").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	  $("#menuToggle2").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	});
+   </script>
+</head>
+<body>
+  <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="wrapper">
+	<div class="header primary-bg w-full text-center p-4 relative">
+		<div class="container mx-auto">
+			<div id="menuToggle" class=" absolute">
+                <img src="./images/menu_button.svg mt-2">
+            </div>
+            <div class="w-8/12 lg:w-1/2 mx-auto">
+				<img src="./images/logo.svg" class="hidden md:inline-block">
+				<img src="./images/logoFooter.svg" class="inline-block md:hidden">
+			</div>
+		</div>
+	</div>
+	<div class="nav w-full lg:border-b border-fuchsia-600 filter drop-shadow-sm relative z-50">
+		<div class="lg:container mx-auto">
+			<div class="w-full">
+				<nav role="navigation" id="menu"> 
+					<div class="toggleArrow" id="menuToggle2"><img src="./images/toggleArrow.png"></div>
+					<ul  class="w-full list-none lg:grid lg:grid-cols-7 gap-2 text-center">
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">Events</a></li>
+						<li class="py-2 lg:bg-blue-100"><a href="./index.html" class="lg:font-medium primary-text font-secondary">News</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">Language School</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="./Greekcenter.html" class="font-secondary xs:text-white">Greek Center</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="./Churches.html" class="font-secondary xs:text-white">Churches</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="Membership.html" class="font-secondary xs:text-white">Supports & Membership</a></li>
+						<li class="py-2 hover:bg-blue-100"><a href="" class="font-secondary xs:text-white">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg-gray-100  pt-16">
+		<div class="container mx-auto px-4">
+			<div class="w-full hidden md:block">
+				<ul class="list-none flex">
+					<li><a href="" class="text-sm primary-text font-secondary">NEWS </a>
+						<span class="text-sm primary-text font-secondary px-3" >:</span>
+					</li>
+					<li><a href="" class="text-sm primary-text font-secondary">ANNOUNCEMENT</a>
+						<span class="text-sm primary-text font-secondary px-3" >:</span>
+					</li>
+					<li><span class="text-sm primary-text font-secondary">REQUEST FOR AUS. GOVERNMENT ACTION</span></li>
+				</ul>
+			</div>
+			<div class="w-full mt-8">
+				<img src="./images/Mask Group 45.svg" class="w-full">
+			</div>
+		</div>
+
+		
+	</div>
+	<div class="container mx-auto px-4">
+		<div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto py-10 md:px-8 lg:px-14 bg-gc-yellow relative mt-10 md:-mt-24">
+			<div class="text-center">
+				<img src="./images/logo-red.svg" class="inline-block">
+			</div> 
+			<h2 class="text-3xl font-medium text-gc-blue mt-8 text-center">Elia Kazan And The Diasporic Identity Of A Greek American Film Maker</h2>
+		 	
+		 	<p class="text-gc-blue font-medium text-md py-4 font-light leading-8 text-center">with Professor Vrasidas Karalis</p>
+		 	
+		 	<table align="center">
+		 		<tr>
+		 			<td class="text-gc-blue font-medium font-secondary py-2 text-right pr-4 uppercase">WHEN:</td>
+		 			<td class="text-gc-blue font-secondary font-light">Thursday, 17/09/2020, 19.00 h</td>
+		 		</tr>
+		 		<tr>
+		 			<td class="text-gc-blue font-medium font-secondary py-2 text-right pr-4 uppercase">WHERE:</td>
+		 			<td class="text-gc-blue font-secondary font-light">Zoom, Facebook, YouTube, Twitter</td>
+		 		</tr>
+		 		<tr>
+		 			<td class="text-gc-blue font-medium font-secondary py-2 text-right pr-4 uppercase">TICKETS:</td>
+		 			<td class="text-gc-blue font-secondary font-light">Free | Registration Recommended</td>
+		 		</tr>
+		 	</table>
+
+		 	<div class="text-center mt-10">
+		 		<a href="" class="inline-block bg-gc-blue text-white py-4 px-12 text-center">REGISTER NOW</a>
+		 		 	 		
+		 	</div>
+		</div>
+		 
+
+		<div class="flex gap-10">
+			<div class="w-full lg:w-9/12">
+				 
+				<p class="text-gc-blue text-lg font-medium pt-4 leading-8">Synopsis</p>
+				<p class="primary-text text-md py-4 font-light leading-8">The lecture explores the artistic and intellectual development of Elia Kazan from his early theatrical productions, his films to his final autobiographical books. It focuses especially on Kazan's most ambitious work America, America (1964) and its fragmented structure and nostalgic re-construction of origins as an Anatolian Greek persecuted by the Ottomans to abandon his country and found refuge in the 'mythical' land of America. Exploring his other famous movies especially On the Waterfront (1952) the lecture addresses the question of the identity of the outsiders and the compromises that they must make in order to be accepted by their adopted countries. Within this context the lecture discusses the notorious testimony of Kazan at the Anti-American Activities Committee and the controversy that followed him throughout his life.</p>
+				<p class="text-gc-blue text-lg font-medium pt-4 leading-8">Bio</p>
+				<p class="primary-text text-md py-4 font-light leading-8">Vrasidas KARALIS teaches Modern Greek Studies at the University of Sydney where he holds the Sir Nicholas Laurantos Chair in Byzantine and Modern Greek Studies. He has published extensively on Byzantine historiography, Greek political life, Greek Cinema, European cinema, the work of Patrick White and contemporary political philosophy. He has edited volumes on modern European political philosophy, especially on Martin Heidegger, Hannah Arendt and Cornelius Castoriadis. His books include Recollections of Mr. Manoly Lascaris (2007), The Demons of Athens (2014), A History of Greek Cinema (2012), Realism and Post-War Greek Cinema (2017). He is currently working on the films of Elia Kazan and John Cassavetes.</p>
+				<p class="text-gc-blue text-lg font-medium pt-4 leading-8">HOW TO PARTICIPATE</p>
+				<p class="primary-text text-md py-4 font-light leading-8">In order to keep everyone safe we have organized this seminar to be delivered online. However, we are well aware that for some, a large part of the appeal of our seminars is the very active audience participation. Therefore we are providing two ways for you to enjoy the seminar:</p>
+				<p class="primary-text text-md py-4 font-light leading-8">If you want to actively participate and ask questions at the end of the seminar you will need to join us through a Zoom Webinar - for which you'll need to pre-register by following this link:</p>
+
+				<a href="https://us02web.zoom.us/webinar/register/6015989579990/WN_R6R3awtoRu2u_wGe-ep_xA" class="break-words text-blue-700 font-light">https://us02web.zoom.us/webinar/register/6015989579990/WN_R6R3awtoRu2u_wGe-ep_xA</a>
+
+				<p class="primary-text text-md py-4 font-light leading-8">If you prefer to sit back and enjoy the show, just join us through our Facebook page or our YouTube page where we'll be live streaming the event.</p>
+				
+				<p class="text-gc-blue text-lg font-medium pt-4 leading-8">Sponsors</p>
+				<p class="primary-text text-md py-4 font-light leading-8">During the course of the year considerable expenses are incurred in staging the seminars. In order to mitigate these costs individuals or organisations are invited to donate against a lecture of their choice.</p>
+				<p class="primary-text text-md py-4 font-light leading-8">You too can donate for one or more seminars and (optionally) let your name or brand be known as a patron of culture to our members, visitors and followers, as well as the broader artistic and cultural community of Melbourne. Please email: <a href="mailto:info@greekcommunity.com.au">info@greekcommunity.com.au</a> or call 03 9662 2722.</p>
+				<p class="primary-text text-md py-4 font-light leading-8">We also thank the following corporate sponsors:</p>
+
+				<div class="text-center mt-8 text-center">
+					<img src="./images/Image 56.svg" class="inline-block">
+				</div>
+
+
+				<div class="w-full bg-blue-100 p-16">
+					<table align="center" class="w-96">
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">LANGUAGE</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">English | No Knowledge of Greek required</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">CATEGORY</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Education</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">EVENT TYPE</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Online Seminar</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">EVENT SERIES</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">2020 Greek History and Culture Seminars</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">PRESENTED BY</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Greek Community of Melbourne</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">ORGANISED BY</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Nick Dallas</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">MAIN ACT</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Professor Vrasidas Karalis</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">M.C.</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Nick Dallas</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">VOLUNTEERS</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Anthi, Dimitra</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">STAFF</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Kostas, Antonia, Stacey</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">SPONSORED BY</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">Delphi Bank, Symposiarch, Papaflessas</td>
+						</tr>
+						<tr>
+							<td class="text-gc-blue font-medium font-secondary py-2 text-sm text-right pr-4 uppercase">DONATIONS</td>
+		 					<td class="text-gc-blue font-secondary font-light text-sm">John Papadopoulos in mem. of his wife Maria Vlahodimitropoulos</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="flex gap-12 mt-16">
+					<span class="primary-text text-md py-1 font-light">SHARE</span>
+					<a href=""><img src="./images/fb.svg"></a>
+					<a href=""><img src="./images/Twitter.svg"></a>
+					<a href=""><img src="./images/email.svg"></a>
+				</div>
+
+				<div class="mt-16 md:w-6/12">
+					<h3 class="primary-text text-2xl">Recent Announcements</h3>
+					<ul class="list-none mt-5 pl-5">
+						<li class="py-4"><a href="" class="primary-text text-md ">Condolence Message</a></li>
+						<li class="py-4"><a href="" class="primary-text text-md ">Our Schools Continue Online</a></li>
+						<li class="py-4"><a href="" class="primary-text text-md">Greek Language Teacher Appointed At Coburg West Primary School</a></li>
+					</ul>
+				</div>
+
+				<div class="mt-8 md:w-6/12">
+					<h3 class="primary-text text-2xl">Events Coming Up</h3>
+					<ul class="list-none mt-5 pl-5">
+						<li class="py-4"><a href="" class="primary-text text-md ">17 Sep: Elia Kazan And The DiasporicIdentity Of A Greek American Film Maker</a></li>
+						<li class="py-4"><a href="" class="primary-text text-md ">27 Sep: COVID And Working Migrant Communities</a></li>
+						 
+					</ul>
+				</div>
+
+			</div>
+			<div class="w-3/12 hidden lg:block">
+				 
+				<div class="border border-blue-800 p-4 relative pt-8 mt-10 w-full">
+					<div class="absolute mx-auto w-16 px-2 h-14 inset-x-0 bg-white suc-icon">
+						<img src="./images/Path_237.svg">
+					</div>
+					<div class=" py-3 text-sm primary-text text-center">
+						Get the latest newsin<br/>your inbox
+					</div>
+					<div class="w-full">
+						<label class="text-xs text-gray-800 font-secondary" >Email (required)</label>
+						<input type="text" name="" class="w-full border border-gray-400 p-3 h-10" placeholder="test">
+						<input type="submit" name="" class="h-10 primary-bg text-white text-center font-bold w-full mt-3" value="SUBSCRIBE">
+					</div>
+				</div>
+				<div class="mt-48">
+					<img src="./images/ads.png">
+				</div> 
+			</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="footer primary-bg mt-16 pt-12 pb-16">
+		<div class="container mx-auto px-4">
+			<div class="w-full py-8">
+				<a href="">
+					<img src="./images/logoFooter.svg" class="hidden md:inline-block">
+					<img src="./images/logo.svg" class="inline-block md:hidden">
+				</a>
+			</div>
+			<div class="md:grid md:grid-cols-7 gap-10">
+				<div class="">
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">EVENTS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">COMING UP</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">LET'S PLAN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OTHER EVENTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">PAST EVENTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">GREEK</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">LIVE AT THE GREEK</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANTIPODES</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">GREEK HISTORY AND CULTURE</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">NEWS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ALL NEWS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCEMEN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">MAJOR NEWS</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">LANGUAGE SCHOOLS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR CHILDREN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR ADULTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ENROL</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SCHOOL BLOG</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OUR STAFF</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OUR HISTORY</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">GREEK CENTRE</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ABOUT</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DIRECTORY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">VENUE BOOKING</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">CHURCHES</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HISTORY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCIATIONOF OUR LADY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HOLY TRINITY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT DEMETRIOS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT GEORGE</a></li>
+					</ul>
+				</div>
+
+				<div >
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center hidden md:block">SUPPORT & MEMBERS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
+					</ul>
+				</div>
+
+				<div >
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center">ABOUT</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A MEMBER</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container px-4 mx-auto md:px-8">
+		<div class="mx-auto flex justify-center mt-10">
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/fb.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">Facebook</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/youtube.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">YouTube</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/Twitter.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">Twitter</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/insta.png" class="inline-block">
+					<p class="primary-text text-xs py-3">Instagram</p>
+				</a>
+			</div>
+		</div>
+
+		<div class="lg:w-5/12 mx-auto mt-16">
+			<ul class="flex justify-between md:list-disc primary-text">
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Home</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Contact</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Map</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Terms, Refunds and Privacy</li>
+			</ul>
+		</div>
+
+		<div class="mt-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">The Greek Community of Melbourne respectfully acknowledges the Traditional Owners of the land, the Boon Wurrung and Woiwurrung (Wurundjeri) peoples of the Kulin Nation and pays respect to their Elders, past and present</p>
+		</div>
+
+		<div class="mt-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">L3, 168 Lonsdale Street, Melbourne, VIC 3000, Australia | +61 3 9662 2722  |  info@greekcommunity.com.au | A.B.N. 14 004 258 360</p>
+		</div>
+
+		<div class="my-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">Copyright © 2022 Greek Community of Melbourne</p>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

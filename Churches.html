@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./tailwind.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	  $("#menuToggle").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	  $("#menuToggle2").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	});
+   </script>
+</head>
+<body>
+  <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="wrapper">
+	<div class="header bg-gc-red w-full text-center p-4 relative">
+		<div class="container mx-auto">
+			<div id="menuToggle" class=" absolute mt-2">
+                <img src="./images/menu_button.svg">
+            </div>
+            <div class="w-8/12 lg:w-1/2 mx-auto">
+				<img src="./images/logo.svg" class="hidden md:inline-block">
+				<img src="./images/logoFooter.svg" class="inline-block md:hidden">
+			</div>
+		</div>
+	</div>
+	<div class="nav w-full lg:border-b border-fuchsia-600 filter drop-shadow-sm relative z-50">
+		<div class="lg:container mx-auto">
+			<div class="w-full">
+				<nav role="navigation" id="menu"> 
+					<div class="toggleArrow" id="menuToggle2"><img src="./images/toggleArrow.png"></div>
+					<ul  class="w-full list-none lg:grid lg:grid-cols-7 gap-2 text-center">
+						<li class="py-2 hover:bg-red-100"><a href="" class="font-secondary xs:text-white">Events</a></li>
+						<li class="py-2 hover:bg-red-100"><a href="./index.html" class="font-secondary xs:text-white">News</a></li>
+						<li class="py-2 hover:bg-red-100"><a href="" class="font-secondary xs:text-white">Language School</a></li>
+						<li class="py-2 hover:bg-red-100"><a href="./Greekcenter.html" class="font-secondary xs:text-white">Greek Center</a></li>
+						<li class="py-2 lg:bg-red-100"><a href="./Churches.html" class="lg:font-medium primary-text font-secondary">Churches</a></li>
+						<li class="py-2 hover:bg-red-100"><a href="Membership.html" class="font-secondary xs:text-white">Supports & Membership</a></li>
+						<li class="py-2 hover:bg-red-100"><a href="" class="font-secondary xs:text-white">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container mx-auto px-4">
+		
+		<div class="bg-gc-red2 p-5 mt-10">
+			<h2 class="text-xl text-yellow-300 text-center">The History of our Churches</h2>
+		</div>
+		
+		<div class="flex relative w-full flex-wrap">
+			<img src="./images/Image 43.svg" class="block">
+			<div class="w-full md:w-5/12 xl:w-4/12 p-6 xl:py-8 xl:px-12 gc-bg-white80 static md:absolute top-0 right-0 h-full">
+				<p class="text-md font-light leading-7">The Greek Orthodox Community of Melbourne and Victoria (GOCMV) since its inception has focussed on the spiritual needs and guidance of the Orthodox faithful in the State of Victoria. The first service, conducted by Archimandrite Dorotheos “Samios” Bakaliaros was held on Sunday 22nd August 1897 at the school hall</p>
+				<div class="flex w-full justify-center">
+				<a href="" class="inline-block bg-gc-red2 text-white py-2 px-12 text-center mt-5">more · 3 min read</a> </div>
+			</div>
+		</div>
+
+		<div class="bg-gc-red2 p-5 mt-10 mt-16">
+			<h2 class="text-xl text-yellow-300 text-center">Explore Our Churches</h2>
+		</div>
+
+		<div class="flex relative w-full border-b-8 border-red-900 lg:border-b-0">
+			<img src="./images/ch-banner1.svg" class="block w-full">
+			<div class="w-full px-3 py-5 md:w-5/12 lg:w-3/12 md:p-5 xl:p-12 gc-bg-purpel80 absolute bottom-0 md:top-0 right-0 lg:mr-16 md:h-full lg:h-4/5 flex items-end">
+				<div class="">
+					<h2 class="text-sm md:text-xl text-white font-medium">Holy Annunciation of our Lady (Evangelismos)</h2>
+					<div class="hidden md:block">
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">186 Victoria ParadeEast Melbourne, VIC 3002</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Priest: Father Antonios Vanikiotis0422 077 282</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Feast Day: 25th March</p>
+						<div class="flex w-full justify-center">
+						<a href="" class="inline-block bg-gc-red2 text-white py-2 px-8 text-center mt-5 border">more details</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex relative w-full lg:mt-5 border-b-8 border-red-900 lg:border-b-0">
+			<img src="./images/Rectangle 385.svg" class="block w-full">
+			<div class="w-full px-3 py-5 md:w-5/12 lg:w-3/12 md:p-5 xl:p-12 gc-bg-purpel80 absolute bottom-0 md:top-0 right-0 lg:mr-16 md:h-full lg:h-4/5 flex items-end">
+				<div class="">
+					<h2 class="text-sm md:text-xl text-white font-medium">Holy Trinity</h2>
+					<div class="hidden md:block">
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">2 Leeds StFootscray, VIC 3011</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Priest: Stergios Patsouris0434 214 998</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Feast Day: Sunday of the Pentecost</p>
+						<div class="flex w-full justify-center">
+						<a href="" class="inline-block bg-gc-red2 text-white py-2 px-8 text-center mt-5 border">more · 5 min read</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex relative w-full lg:mt-5 border-b-8 border-red-900 lg:border-b-0">
+			<img src="./images/Rectangle 386.svg" class="block w-full">
+			<div class="w-full px-3 py-5 md:w-5/12 lg:w-3/12 md:p-5 xl:p-12 gc-bg-purpel80 absolute bottom-0 md:top-0 right-0 lg:mr-16 md:h-full lg:h-4/5 flex items-end">
+				<div class="">
+					<h2 class="text-sm md:text-xl text-white font-medium">Saint Eleftherios</h2>
+					<div class="hidden md:block">
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">279 Albion St, Brunswick, VIC 3056</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Priest: Matthew Papadopoulos0414 305 942</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Feast Day: 15th December</p>
+						<div class="flex w-full justify-center">
+						<a href="" class="inline-block bg-gc-red2 text-white py-2 px-8 text-center mt-5 border">more · 5 min read</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex relative w-full lg:mt-5 border-b-8 border-red-900 lg:border-b-0">
+			<img src="./images/Rectangle 387.svg" class="block w-full">
+			<div class="w-full px-3 py-5 md:w-5/12 lg:w-3/12 md:p-5 xl:p-12 gc-bg-purpel80 absolute bottom-0 md:top-0 right-0 lg:mr-16 md:h-full lg:h-4/5 flex items-end">
+				<div class="">
+					<h2 class="text-sm md:text-xl text-white font-medium">Saint Demetrios</h2>
+					<div class="hidden md:block">
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">380 High StPrahran, VIC 3181</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Priest: Rev. Diamantis Kourabis0418 559 889</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Feast Day: 26th October</p>
+						<div class="flex w-full justify-center">
+						<a href="" class="inline-block bg-gc-red2 text-white py-2 px-8 text-center mt-5 border">more · 5 min read</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex relative w-full lg:mt-5 border-b-8 border-red-900 lg:border-b-0">
+			<img src="./images/Rectangle 388.svg" class="block w-full">
+			<div class="w-full px-3 py-5 md:w-5/12 lg:w-3/12 md:p-5 xl:p-12 gc-bg-purpel80 absolute bottom-0 md:top-0 right-0 lg:mr-16 md:h-full lg:h-4/5 flex items-end">
+				<div class="">
+					<h2 class="text-sm md:text-xl text-white font-medium">Saint George</h2>
+					<div class="hidden md:block">
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">66 St. David StThornbury, VIC 3070</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Priest: Rev. Harris Vezos0416277621</p>
+						<p class="text-md font-light leading-7 text-white md:py-1 xl:py-3">Feast Day: 23rd April</p>
+						<div class="flex w-full justify-center">
+						<a href="" class="inline-block bg-gc-red2 text-white py-2 px-8 text-center mt-5 border">more · 5 min read</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		 
+	</div>
+
+	<div class="footer bg-gc-red mt-16 pt-12 pb-16">
+		<div class="container mx-auto px-4">
+			<div class="w-full py-8">
+				<a href="">
+					<img src="./images/logoFooter.svg" class="hidden md:inline-block">
+					<img src="./images/logo.svg" class="inline-block md:hidden">
+				</a>
+			</div>
+			<div class="md:grid md:grid-cols-7 gap-10">
+				<div class="">
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center border-opacity-40">EVENTS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">COMING UP</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">LET'S PLAN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OTHER EVENTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">PAST EVENTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">GREEK</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">LIVE AT THE GREEK</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANTIPODES</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">GREEK HISTORY AND CULTURE</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center border-opacity-40">NEWS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ALL NEWS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCEMEN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">MAJOR NEWS</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center border-opacity-40">LANGUAGE SCHOOLS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR CHILDREN</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">FOR ADULTS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ENROL</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SCHOOL BLOG</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OUR STAFF</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">OUR HISTORY</a></li>
+					</ul>
+				</div>
+
+				<div class="">
+					<h3  class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center border-opacity-40">GREEK CENTRE</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ABOUT</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DIRECTORY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">VENUE BOOKING</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center border-opacity-40">CHURCHES</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HISTORY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">ANNOUNCIATIONOF OUR LADY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">HOLY TRINITY</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT DEMETRIOS</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">SAINT GEORGE</a></li>
+					</ul>
+				</div>
+
+				<div >
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center border-opacity-40 hidden md:block">SUPPORT & MEMBERS</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
+					</ul>
+				</div>
+
+				<div >
+					<h3 class="text-white text-lg font-medium py-4 mb-4 font-secondary border-b md:h-24 flex items-center border-opacity-40">ABOUT</h3>
+					<ul class="list-none hidden md:block">
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">BECOME A MEMBER</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">RENEW</a></li>
+						<li class="py-2"><a href="" class="text-sm text-white font-secondary">DONATIONS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container px-4 mx-auto md:px-8">
+		<div class="mx-auto flex justify-center mt-10">
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/fb.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">Facebook</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/youtube.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">YouTube</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/Twitter.svg" class="inline-block">
+					<p class="primary-text text-xs py-3">Twitter</p>
+				</a>
+			</div>
+
+			<div class="text-center px-4">
+				<a href="" class="bolck">
+					<img src="./images/insta.png" class="inline-block">
+					<p class="primary-text text-xs py-3">Instagram</p>
+				</a>
+			</div>
+		</div>
+
+		<div class="lg:w-5/12 mx-auto mt-16">
+			<ul class="flex justify-between md:list-disc primary-text">
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Home</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Contact</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Map</li>
+				<li class="font-secondary text-sm md:text-md primary-text pl-1">Terms, Refunds and Privacy</li>
+			</ul>
+		</div>
+
+		<div class="mt-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">The Greek Community of Melbourne respectfully acknowledges the Traditional Owners of the land, the Boon Wurrung and Woiwurrung (Wurundjeri) peoples of the Kulin Nation and pays respect to their Elders, past and present</p>
+		</div>
+
+		<div class="mt-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">L3, 168 Lonsdale Street, Melbourne, VIC 3000, Australia | +61 3 9662 2722  |  info@greekcommunity.com.au | A.B.N. 14 004 258 360</p>
+		</div>
+
+		<div class="my-12 text-center">
+			<p class="font-secondary text-sm primary-text leading-8">Copyright © 2022 Greek Community of Melbourne</p>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
