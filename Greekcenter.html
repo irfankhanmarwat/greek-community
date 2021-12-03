@@ -9,7 +9,16 @@
   <link href="./css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./js/lightslider.js"></script>
-  
+  <script>
+	$(document).ready(function(){
+	  $("#menuToggle").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	  $("#menuToggle2").click(function(){
+	    $("#menu").toggleClass("show");
+	  });
+	});
+   </script>
 </head>
 <body>
   <!-- This example requires Tailwind CSS v2.0+ -->
