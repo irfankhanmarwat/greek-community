@@ -15,13 +15,20 @@
 	  $("#menuToggle2").click(function(){
 	    $("#menu").toggleClass("show");
 	  });
+	  
+		var btn = $('#goTop');
+		btn.on('click', function(e) {
+		  e.preventDefault();
+		  $('html, body').animate({scrollTop:0}, '500');
+		});
+
 	});
    </script>
 </head>
 <body>
   <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="wrapper bg-gray-100">
-	<div class="header primary-bg w-full text-center p-4 relative">
+	<div class="header bg-gc-blue w-full text-center p-4 relative">
 		<div class="container mx-auto">
 			<div id="menuToggle" class=" absolute mt-2">
                 <img src="./images/menu_button.svg">
@@ -54,7 +61,7 @@
 		 
 		 <div class="flex relative w-full flex-wrap">
 			<img src="./images/Mask_Group_25.svg" class="block">
-			<div class="text-center w-full md:w-5/12 xl:w-3/12 p-6 xl:py-8 xl:px-6 gc-bg-white80 static md:absolute top-12 right-12 h-4/5">
+			<div class="text-center w-full lg:w-5/12 xl:w-3/12 p-6 xl:py-8 xl:px-6 gc-bg-white80 static lg:absolute top-12 right-12 h-4/5">
 					<div class="inline-block gc-bg-gold py-1 px-2 text-xxs mt-5 font-light mx-auto px-4 h-8 leading-6 text-center text-white"><span class="font-medium">EVENT:</span> ANTIPODES FESTIVAL 2022</div>
 					<p class="text-sm primary-text font-light mt-5">The Greek Community of Melbourne presents</p>
 		 			<h3 class="mt-4 text-xl primary-text">Antipodes Festival 2022</h3>
@@ -64,9 +71,9 @@
 			</div>
 		</div>
 		   
-		 <div class="flex gap-6 mt-8 flex-wrap md:flex-nowrap">
+		 <div class="flex gap-6 mt-8 flex-wrap lg:flex-nowrap">
 
-		 	<div class="w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-gc-yellow" >
+		 	<div class="pb-8 relative w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-gc-yellow" >
 		 		<div class="relative w-full postImgCase">
 		 			<img src="./images/Group_329e1.svg" class="w-full">
 		 			<div class="absolute inline-block bg-gc-yellow2 py-1 px-2 text-xxs mt-5 font-light absolute inset-0 mx-auto w-40 h-8 leading-6 text-center"><span class="font-medium">EVENT:</span> ONLINE SEMINAR</div>
@@ -77,7 +84,7 @@
 		 			<p class="text-xs primary-text font-light py-3">with Kosmos Samaras</p>
 		 			
 		 		</div>
-		 		<div class="bg-gc-yellow2 flex justify-center py-2 text-center">
+		 		<div class="bg-gc-yellow2 flex justify-center py-2 text-center absolute w-full bottom-0">
 				 	<span class="text-xs font-light px-2 text-gc-blue">27/09/20 19.00 h</span>
 				 	<span class="text-xs text-gc-blue">|</span>
 				 	<span class="text-xs font-medium px-2 text-gc-blue">Online Only Event</span>
@@ -86,7 +93,7 @@
 				 </div>
 		 	</div>
 
-		 	<div class="w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-blue-100" >
+		 	<div class="pb-8 relative w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-blue-100" >
 		 		<div class="relative w-full postImgCase">
 		 			<img src="./images/Mask Group_39e2.svg" class="w-full">
 		 			<div class="absolute inline-block bg-blue-100 py-1 px-2 text-xxs mt-5 font-light absolute inset-0 mx-auto w-40 h-8 leading-6 text-center"><span class="font-medium">EVENT:</span> CINEMA EVENT</div>
@@ -97,7 +104,7 @@
 		 			<p class="text-xs primary-text font-light py-3">by Film Maker X</p>
 		 			
 		 		</div>
-		 		<div class="bg-blue-200 flex justify-center py-2 text-center">
+		 		<div class="bg-blue-200 flex justify-center py-2 text-center absolute w-full bottom-0">
 				 	<span class="text-xs font-light px-2 text-gc-blue">27/09/20 19.00 h</span>
 				 	<span class="text-xs text-gc-blue">|</span>
 				 	<span class="text-xs font-medium px-2 text-gc-blue">Online Only Event</span>
@@ -106,7 +113,7 @@
 				 </div>
 		 	</div>
 
-		 	<div class="w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-yellow-200" >
+		 	<div class="pb-8 relative w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-yellow-200" >
 		 		<div class="relative w-full postImgCase">
 		 			<img src="./images/Mask Group_38e3.svg" class="w-full">
 		 			<div class="absolute inline-block bg-gc-yellow2 py-1 px-2 text-xxs mt-5 font-light absolute inset-0 mx-auto w-40 h-8 leading-6 text-center"><span class="font-medium">EVENT:</span> CULINARY EVENT</div>
@@ -117,7 +124,7 @@
 		 			<p class="text-xs primary-text font-light py-3">with Kosmos Samaras</p>
 		 			
 		 		</div>
-		 		<div class="bg-yellow-300 flex justify-center py-2 text-center">
+		 		<div class="bg-yellow-300 flex justify-center py-2 text-center absolute w-full bottom-0">
 				 	<span class="text-xs font-light px-2 text-gc-blue">27/09/20 19.00 h</span>
 				 	<span class="text-xs text-gc-blue">|</span>
 				 	<span class="text-xs font-medium px-2 text-gc-blue">Online Only Event</span>
@@ -126,7 +133,7 @@
 				 </div>
 		 	</div>
 
-		 	<div class="w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-white" >
+		 	<div class="pb-8 relative w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-white" >
 		 		<div class="relative w-full postImgCase">
 		 			<img src="./images/Mask Group_37e4.svg" class="w-full">
 		 			<div class="absolute inline-block bg-gc-yellow2 py-1 px-2 text-xxs mt-5 font-light absolute inset-0 mx-auto w-40 h-8 leading-6 text-center"><span class="font-medium">EVENT:</span> BOOK LAUNCH</div>
@@ -137,7 +144,7 @@
 		 			<p class="text-xs primary-text font-light py-3">with Kosmos Samaras</p>
 		 			
 		 		</div>
-		 		<div class="bg-gray-200 flex justify-center py-2 text-center">
+		 		<div class="bg-gray-200 flex justify-center py-2 text-center absolute w-full bottom-0">
 				 	<span class="text-xs font-light px-2 text-gc-blue">27/09/20 19.00 h</span>
 				 	<span class="text-xs text-gc-blue">|</span>
 				 	<span class="text-xs font-medium px-2 text-gc-blue">Online Only Event</span>
@@ -150,8 +157,8 @@
 		 </div>
 
 
-		 <div class="flex gap-6 mt-8 flex-wrap md:flex-nowrap">
-		 	<div class="w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-white" >
+		 <div class="flex gap-6 mt-8 flex-wrap lg:flex-nowrap">
+		 	<div class="pb-8 relative w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-white" >
 		 		<div class="relative w-full postImgCase">
 		 			<img src="./images/Mask Group_37e4.svg" class="w-full">
 		 			<div class="absolute inline-block bg-gc-yellow2 py-1 px-2 text-xxs mt-5 font-light absolute inset-0 mx-auto w-40 h-8 leading-6 text-center"><span class="font-medium">EVENT:</span> BOOK LAUNCH</div>
@@ -162,7 +169,7 @@
 		 			<p class="text-xs primary-text font-light py-3">with Kosmos Samaras</p>
 		 			
 		 		</div>
-		 		<div class="bg-gray-200 flex justify-center py-2 text-center">
+		 		<div class="bg-gray-200 flex justify-center py-2 text-center absolute w-full bottom-0">
 				 	<span class="text-xs font-light px-2 text-gc-blue">27/09/20 19.00 h</span>
 				 	<span class="text-xs text-gc-blue">|</span>
 				 	<span class="text-xs font-medium px-2 text-gc-blue">Online Only Event</span>
@@ -172,7 +179,7 @@
 		 	</div> 
 		 	
 
-		 	<div class="w-full lg:w-8/12 xl:w-2/4 filter drop-shadow-md bg-gc-yellow">
+		 	<div class="pb-8 relative w-full lg:w-8/12 xl:w-2/4 filter drop-shadow-md bg-gc-yellow">
 		 		<div class="relative w-full postImgCase ">
 		 			<img src="./images/im-318460e5.svg">
 		 			<a href="" class="py-2 text-xxs bg-gc-yellow2 text-white text-center inline-block absolute inset-x-0 mt-10 md:mt-5 top-0 mx-auto w-72"><span class="font-medium">EVENT:</span> ONLINE SEMINAR</a>
@@ -184,7 +191,7 @@
 		 			<p class="text-sm font-light">The Greek Community of Melbourne wholeheartedly welcomes the appointment of a teacher that will allow the Greek language program at Coburg West Primary School to recommence in term three.</p>
 		 			 
 		 		</div>
-		 		<div class="bg-gc-yellow2 flex justify-center py-2 text-center">
+		 		<div class="bg-gc-yellow2 flex justify-center py-2 text-center absolute w-full bottom-0">
 				 	<span class="text-xs font-light px-2 text-gc-blue">27/09/20 19.00 h</span>
 				 	<span class="text-xs text-gc-blue">|</span>
 				 	<span class="text-xs font-medium px-2 text-gc-blue">Online Only Event</span>
@@ -193,7 +200,7 @@
 				 </div>
 		 	</div>
 
-		 	<div class="w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-blue-100" >
+		 	<div class="pb-8 relative w-full lg:w-4/12 xl:w-1/4 filter drop-shadow-md bg-blue-100" >
 		 		<div class="relative w-full postImgCase">
 		 			<img src="./images/Mask Group_39e2.svg" class="w-full">
 		 			<div class="absolute inline-block bg-blue-100 py-1 px-2 text-xxs mt-5 font-light absolute inset-0 mx-auto w-40 h-8 leading-6 text-center"><span class="font-medium">EVENT:</span> CINEMA EVENT</div>
@@ -204,7 +211,7 @@
 		 			<p class="text-xs primary-text font-light py-3">by Film Maker X</p>
 		 			
 		 		</div>
-		 		<div class="bg-blue-200 flex justify-center py-2 text-center">
+		 		<div class="bg-blue-200 flex justify-center py-2 text-center absolute w-full bottom-0">
 				 	<span class="text-xs font-light px-2 text-gc-blue">27/09/20 19.00 h</span>
 				 	<span class="text-xs text-gc-blue">|</span>
 				 	<span class="text-xs font-medium px-2 text-gc-blue">Online Only Event</span>
@@ -213,10 +220,12 @@
 				 </div>
 		 	</div>
 		 </div>
-		
+		<div class="md:hidden flex items-center p-4 justify-end mt-8" id="goTop">
+			<span class="text-gc-blue text-md mr-4">Back to Top</span><img src="./images/Polygon_3.svg">
+		</div>
 	</div>
 
-	<div class="footer primary-bg mt-16 pt-12 pb-16">
+	<div class="footer bg-gc-blue mt-8 lg:mt-16 pt-12 pb-16">
 		<div class="container mx-auto px-4">
 			<div class="w-full py-8">
 				<a href="">

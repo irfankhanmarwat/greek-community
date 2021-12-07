@@ -17,11 +17,18 @@
 	  $("#menuToggle2").click(function(){
 	    $("#menu").toggleClass("show");
 	  });
+	  
+		var btn = $('#goTop');
+		btn.on('click', function(e) {
+		  e.preventDefault();
+		  $('html, body').animate({scrollTop:0}, '500');
+		});
+
 	});
    </script>
 </head>
 <body>
-  <!-- This example requires Tailwind CSS v2.0+ -->
+   
 <div class="wrapper">
 	<div class="header primary-bg w-full text-center p-4 relative z-50">
 		<div class="container mx-auto">
@@ -179,8 +186,10 @@
 				<p class="text-md primary-text text-center"><span class="font-medium">antonia@greekcommunity.com.au</span> or on 03 9662 2722.</p>
 			</div>
 	</div>
-
-	<div class="footer primary-bg mt-16 pt-12 pb-16">
+	<div class="md:hidden flex items-center p-4 justify-end mt-8" id="goTop">
+			<span class="text-gc-blue text-md mr-4">Back to Top</span><img src="./images/Polygon_3.svg">
+		</div>
+	<div class="footer primary-bg mt-8 lg:mt-16 pt-12 pb-16">
 		<div class="container mx-auto px-4">
 			<div class="w-full py-8">
 				<a href="">

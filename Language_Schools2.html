@@ -7,7 +7,7 @@
   <link href="./tailwind.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
+   <script>
 	$(document).ready(function(){
 	  $("#menuToggle").click(function(){
 	    $("#menu").toggleClass("show");
@@ -15,11 +15,18 @@
 	  $("#menuToggle2").click(function(){
 	    $("#menu").toggleClass("show");
 	  });
+	  
+		var btn = $('#goTop');
+		btn.on('click', function(e) {
+		  e.preventDefault();
+		  $('html, body').animate({scrollTop:0}, '500');
+		});
+
 	});
    </script>
 </head>
 <body>
-  <!-- This example requires Tailwind CSS v2.0+ -->
+ 
 <div class="wrapper bg-gray-100">
 	<div class="header primary-bg w-full text-center p-4 relative">
 		<div class="container mx-auto">
@@ -52,7 +59,7 @@
 	</div>
 	<div class="w-full relative">
 			<img src="./images/Mask_Group_53.svg" class="w-full hidden md:block">
-			<img src="./images/Alive in the Fire_Sarah Rhoads 2_cmyk_cc2.jpg" class="w-full block md:hidden">
+			<img src="./images/Rectangle_91.png" class="w-full block md:hidden">
 			<a href="" class="py-2 text-xs primary-bg text-white text-center inline-block absolute inset-x-0 mt-10 md:mt-5 top-0 mx-auto border-2 lg:hidden w-72"> LANGUAGE SCHOOLS</a>
 		</div>
 	<div class="container mx-auto lg:px-4">
@@ -175,8 +182,11 @@
 				<a href="" class="text-md primary-text font-light leading-8  flex"><img src="./images/Subtraction_4.svg" class="mr-3">Follow our School on Facebook</a></div>
 		</div>
 
+	</div>
+	<div class="md:hidden flex items-center p-4 justify-end mt-8" id="goTop">
+		<span class="gc-text-purpal text-md mr-4">Back to Top</span><img src="./images/Polygon_1.svg">
 	</div>	
-	<div class="footer gc-bg-purpal mt-16 pt-12 pb-16">
+	<div class="footer gc-bg-purpal mt-8 md:mt-16 pt-12 pb-16">
 		<div class="container mx-auto px-4">
 			<div class="w-full py-8">
 				<a href="">

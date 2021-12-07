@@ -54,6 +54,7 @@ body{
 }
 .gc-bg-purpel80{
 	background: rgb(148 109 171 / 80%);
+	/*background: url(../images/purplbg.png);*/
 }
 .gc-bg-gray80{
 	background: rgb(153 151 151 / 80%);
