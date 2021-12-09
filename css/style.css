@@ -50,14 +50,20 @@ body{
 	background: #6a0311;
 }
 .gc-bg-white80{
-	background: rgb(255 255 255 / 80%);
+	background: rgb(255 255 255 / 65%);
+	-webkit-backdrop-filter: blur(22px);
+	backdrop-filter: blur(22px);
 }
 .gc-bg-purpel80{
-	background: rgb(148 109 171 / 80%);
+	background: rgb(148 109 171 / 65%);
+	-webkit-backdrop-filter: blur(22px);
+	backdrop-filter: blur(22px);
 	/*background: url(../images/purplbg.png);*/
 }
 .gc-bg-gray80{
-	background: rgb(153 151 151 / 80%);
+	background: rgb(153 151 151 / 65%);
+	-webkit-backdrop-filter: blur(22px);
+	backdrop-filter: blur(22px);
 }
 .gc-bg-orange{
 	background:#F05A28;
