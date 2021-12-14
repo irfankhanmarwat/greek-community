@@ -9,11 +9,47 @@ body{
 	text-decoration: none;
 	font-family: 'Roboto Slab', serif;
 }
+.wrapper {
+    width: 100%;
+    float: left;
+    background: #f2f2f2;
+}
+.header {
+    height: 92px;
+    padding-bottom: 17px;
+    padding-top: 16px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.nav {
+    height: 48px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-image: linear-gradient(to top, #fff 76%, #f1f6ff);
+}
+#menu li {
+    padding: 0px 20px;
+    height: 48px;
+    line-height: 48px;
+}
+#menu li a{
+	font-size:20px; 
+	color: #9a9a9a; 
+}
+.font-33{
+	font-size: 33px;
+}.font-18{
+	font-size: 18px;
+}
+.font-16{
+	font-size: 16px;
+}
+.font-14{
+	font-size: 14px;
+}
 .primary-bg{
 	background: #1f4fa1;
 }
 .primary-text{
-	color: #1f4fa1;
+	color: #1f4fa1 !important;
 }
 .font-secondary{
 	font-family: 'Roboto', sans-serif;
@@ -32,7 +68,7 @@ body{
 	background:#F3D690;
 }
 .text-gc-blue{
-	color: #02315a;
+	color: #02315a !important;
 }
 .bg-gc-blue{
 	background: #02315a;
@@ -121,7 +157,56 @@ ul.lSPager.lSpg {
 .postImgCase{
 	min-height: 100px;
 }
+.churcheHeading{
+	height: 64px;
+	line-height: 64px;
+}
+.churcheHeading h2{
+	font-size: 20px;
+	color: #F3CE00;
+	text-align: center;
+}
+.churche_banner_content1{
+	width: 384px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1366px){
+.header {
+    height: 73px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+}
+.lg-logo {
+    height: 48px;
+}
+#menu {
+    height: 48px;
+}
+#menu li {
+    padding: 0px 20px;
+    height: 48px;
+    line-height: 48px;
+}
+#menu li a{
+	font-size:18px;
+}
+.container {
+	max-width: 1088px;
+}
+}
 @media (max-width: 1023px){
+.container{
+	max-width: 100%;
+}
 #menuToggle,#menuToggle2{
 	display: block;
 }
@@ -155,7 +240,6 @@ nav {
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
-
 #menu{
   position: absolute;
   width: 300px;
@@ -173,6 +257,7 @@ nav {
 {
   padding: 10px 0;
   transition-delay: 2s;
+  width: 100%;
 }
 .show{
   transform: none !important;
