@@ -172,8 +172,12 @@ ul.lSPager.lSpg {
 .wrapper.bg-white{
 	background: #fff;
 }
-
-
+.about-banner-cont,.events-banner-cont{
+	max-width: 1491px;
+}
+.flex-show-1366{
+	display: none;
+}
 
 
 
@@ -203,6 +207,26 @@ ul.lSPager.lSpg {
 }
 .container {
 	max-width: 1088px;
+}
+.hidden-1366{
+	display: none;
+}
+.flex-show-1366{
+	display: flex;
+}
+.eventBoxHome{
+	width: 32%;
+}
+.w-full-1336{
+	width: 100%;
+	max-width: 100%;
+}
+.about-banner-cont{
+	max-width:1256px;
+}
+.events-banner-cont{
+	max-width: 100%;
+	padding:0 !important;
 }
 }
 @media (max-width: 1023px){
@@ -280,4 +304,20 @@ nav {
 .lSAction > a{
 	display: none;
 }
+}
+@media (max-width: 768px){
+	.eventBoxHome{
+		width: 100%;
+	}
+	.about-banner-cont .w-full.md\:w-8\/12,.w-full.md\:w-4\/12 {
+		width: 100%;
+	}
+	.header{
+		height: 66px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	.mb-logo{
+		height: 38px;
+	}
 }
