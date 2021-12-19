@@ -70,6 +70,12 @@ body{
 .text-gc-blue{
 	color: #02315a !important;
 }
+.bg-gc-blue2{
+	background: #1A4288;
+}
+.text-gc-blue2{
+	color: #1A4288;
+}
 .bg-gc-blue{
 	background: #02315a;
 }
@@ -186,6 +192,10 @@ ul.lSPager.lSpg {
 
 
 @media (max-width: 1366px){
+.SD-full{
+	width: 100% !important;
+	max-width: 100% !important;
+}
 .header {
     height: 73px;
     padding-top: 12px;
@@ -227,6 +237,12 @@ ul.lSPager.lSpg {
 .events-banner-cont{
 	max-width: 100%;
 	padding:0 !important;
+}
+.EventBoxUpper {
+    width: 32%;
+}
+.EventBoxlower{
+	width: 66%;
 }
 }
 @media (max-width: 1023px){
@@ -319,5 +335,8 @@ nav {
 	}
 	.mb-logo{
 		height: 38px;
+	}
+	.EventBoxUpper,.EventBoxlower{
+		width:100%;
 	}
 }
